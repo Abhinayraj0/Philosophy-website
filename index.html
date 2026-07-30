@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGOS | Modern Journal of Philosophy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Announcement / Quote Bar -->
+    <div class="top-banner">
+        <p><em>“The unexamined life is not worth living.”</em> — Socrates</p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo">LOGOS<span class="dot">.</span></a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Philosophers</a></li>
+                    <li><a href="#">Concepts</a></li>
+                    <li><a href="#">Archive</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="theme-btn">
+                    <span class="icon">🌙</span>
+                </button>
+                <div class="search-wrapper">
+                    <input type="search" placeholder="Search ideas..." class="search-bar" id="search-input">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+
+        <!-- Editorial Hero: Asymmetric Layout -->
+        <section class="hero-editorial">
+            <!-- Main Featured Story -->
+            <article class="featured-story">
+                <span class="tag hero-tag">Featured Essay</span>
+                <h1 class="hero-title">The Architecture of Human Consciousness</h1>
+                <p class="hero-excerpt">From Descartes' dualism to modern physicalism, exploring how humanity has tried to solve the "hard problem" of the mind.</p>
+                <div class="meta-row">
+                    <span class="author">By Dr. Julian Vance</span>
+                    <span class="dot-divider">•</span>
+                    <span class="read-time">12 min read</span>
+                </div>
+                <a href="#" class="read-btn">Read Deep Dive &rarr;</a>
+            </article>
+
+            <!-- Trending Sidebar -->
+            <aside class="sidebar-trending">
+                <h3 class="sidebar-title">Trending Thinkers</h3>
+                <ul class="trending-list">
+                    <li>
+                        <span class="num">01</span>
+                        <div>
+                            <h4>Friedrich Nietzsche</h4>
+                            <p>Will to power & the Overman</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">02</span>
+                        <div>
+                            <h4>Marcus Aurelius</h4>
+                            <p>Stoic sovereignty in crisis</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="num">03</span>
+                        <div>
+                            <h4>Simone de Beauvoir</h4>
+                            <p>Ethics of ambiguity & freedom</p>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="filter-section">
+            <h2 class="section-heading">Curated Explorations</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Essays</button>
+                <button class="filter-btn" data-filter="philosopher">Philosophers</button>
+                <button class="filter-btn" data-filter="concept">Concepts</button>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="grid" id="articles-grid">
+            <!-- Article 1 -->
+            <article class="card" data-category="philosopher">
+                <div class="card-accent accent-gold"></div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="tag">Philosopher</span>
+                        <span class="read-time">6 min</span>
+                    </div>
+                    <h3>Nietzsche & The Affirmation of Suffering</h3>
+                    <p>Why <em>Amor Fati</em> (love of fate) isn't passive acceptance, but a radical embrace of every moment.</p>
+                    <div class="card-footer">
+                        <span class="author">By Clara Thorne</span>
+                        <a href="#" class="card-link">Explore</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card" data-category="concept">
+                <div class="card-accent accent-blue"></div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="tag">Concept</span>
+                        <span class="read-time">8 min</span>
+                    </div>
+                    <h3>Radical Freedom & Existential Angst</h3>
+                    <p>Sartre's warning: if existence precedes essence, we are condemned to be free without excuses.</p>
+                    <div class="card-footer">
+                        <span class="author">By Marcus Aurelius Fan</span>
+                        <a href="#" class="card-link">Explore</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="card" data-category="concept">
+                <div class="card-accent accent-red"></div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="tag">Concept</span>
+                        <span class="read-time">5 min</span>
+                    </div>
+                    <h3>The Ship of Theseus Paradox</h3>
+                    <p>If every plank of a wooden ship is replaced over time, does it remain the exact same ship?</p>
+                    <div class="card-footer">
+                        <span class="author">By Prof. H. Spencer</span>
+                        <a href="#" class="card-link">Explore</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">LOGOS<span class="dot">.</span></a>
+                <p>An open-access digital journal exploring timeless ideas and contemporary thought.</p>
+            </div>
+            <div class="footer-nav">
+                <div>
+                    <h5>Topics</h5>
+                    <a href="#">Epistemology</a>
+                    <a href="#">Metaphysics</a>
+                    <a href="#">Ethics</a>
+                </div>
+                <div>
+                    <h5>Journal</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Submissions</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LOGOS Journal. Built for thinkers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
